@@ -5,19 +5,19 @@ package com.yy.smallshare.common;
  */
 public class Constants {
     /**
-     * ï¿½ï¿½Ç° DEMO Ó¦ï¿½Ãµï¿½ APP_KEYï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½Ó¦ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ APP_KEY ï¿½æ»»ï¿½ï¿½ APP_KEY
+     * µ±Ç° DEMO Ó¦ÓÃµÄ APP_KEY£¬µÚÈý·½Ó¦ÓÃÓ¦¸ÃÊ¹ÓÃ×Ô¼ºµÄ APP_KEY Ìæ»»¸Ã APP_KEY
      */
     public static final String APP_KEY = "2045436852";
 
     /**
-     * ï¿½ï¿½Ç° DEMO Ó¦ï¿½ÃµÄ»Øµï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½Ã¿ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½Ä»Øµï¿½Ò³ï¿½ï¿½
-     * ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½Ä¬ï¿½Ï»Øµï¿½Ò³ï¿½ï¿½https://api.weibo.com/oauth2/default.html
+     * µ±Ç° DEMO Ó¦ÓÃµÄ»Øµ÷Ò³£¬µÚÈý·½Ó¦ÓÃ¿ÉÒÔÊ¹ÓÃ×Ô¼ºµÄ»Øµ÷Ò³¡£
+     * ½¨ÒéÊ¹ÓÃÄ¬ÈÏ»Øµ÷Ò³£ºhttps://api.weibo.com/oauth2/default.html
      */
     public static final String REDIRECT_URL = "https://api.weibo.com/oauth2/default.html";
 
     /**
-     * WeiboSDKDemo Ó¦ï¿½Ã¶ï¿½Ó¦ï¿½ï¿½È¨ï¿½Þ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ã²»ï¿½ï¿½Òªï¿½ï¿½Ã´ï¿½à£¬ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½Ã³É¿Õ¼ï¿½ï¿½É¡ï¿½
-     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é¿´ Demo ï¿½Ð¶ï¿½Ó¦ï¿½ï¿½×¢ï¿½Í¡ï¿½
+     * WeiboSDKDemo Ó¦ÓÃ¶ÔÓ¦µÄÈ¨ÏÞ£¬µÚÈý·½¿ª·¢ÕßÒ»°ã²»ÐèÒªÕâÃ´¶à£¬¿ÉÖ±½ÓÉèÖÃ³É¿Õ¼´¿É¡£
+     * ÏêÇéÇë²é¿´ Demo ÖÐ¶ÔÓ¦µÄ×¢ÊÍ¡£
      */
     public static final String SCOPE =
             "email,direct_messages_read,direct_messages_write,"
