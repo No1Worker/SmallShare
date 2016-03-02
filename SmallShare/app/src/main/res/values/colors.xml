@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 白色 -->
+    <color name="white">#ffffff</color>
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <!-- 亮粉红色 -->
+    <color name="lightsalmon">#ffa07a</color>
+    <!-- 橙色 -->
+    <color name="orange">#ffa500</color>
+    <!-- 红橙色 -->
+    <color name="orangered">#ff4500</color>
+</resources>

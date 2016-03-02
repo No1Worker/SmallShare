@@ -5,22 +5,31 @@ package com.yy.smallshare.common;
  */
 public class Constants {
     /**
-     * µ±Ç° DEMO Ó¦ÓÃµÄ APP_KEY£¬µÚÈı·½Ó¦ÓÃÓ¦¸ÃÊ¹ÓÃ×Ô¼ºµÄ APP_KEY Ìæ»»¸Ã APP_KEY
+     * ï¿½ï¿½Ç° DEMO Ó¦ï¿½Ãµï¿½ APP_KEYï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½Ó¦ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ APP_KEY ï¿½æ»»ï¿½ï¿½ APP_KEY
      */
     public static final String APP_KEY = "2045436852";
 
     /**
-     * µ±Ç° DEMO Ó¦ÓÃµÄ»Øµ÷Ò³£¬µÚÈı·½Ó¦ÓÃ¿ÉÒÔÊ¹ÓÃ×Ô¼ºµÄ»Øµ÷Ò³¡£
-     * ½¨ÒéÊ¹ÓÃÄ¬ÈÏ»Øµ÷Ò³£ºhttps://api.weibo.com/oauth2/default.html
+     * ï¿½ï¿½Ç° DEMO Ó¦ï¿½ÃµÄ»Øµï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½Ã¿ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½Ä»Øµï¿½Ò³ï¿½ï¿½
+     * ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½Ä¬ï¿½Ï»Øµï¿½Ò³ï¿½ï¿½https://api.weibo.com/oauth2/default.html
      */
     public static final String REDIRECT_URL = "https://api.weibo.com/oauth2/default.html";
 
     /**
-     * WeiboSDKDemo Ó¦ÓÃ¶ÔÓ¦µÄÈ¨ÏŞ£¬µÚÈı·½¿ª·¢ÕßÒ»°ã²»ĞèÒªÕâÃ´¶à£¬¿ÉÖ±½ÓÉèÖÃ³É¿Õ¼´¿É¡£
-     * ÏêÇéÇë²é¿´ Demo ÖĞ¶ÔÓ¦µÄ×¢ÊÍ¡£
+     * WeiboSDKDemo Ó¦ï¿½Ã¶ï¿½Ó¦ï¿½ï¿½È¨ï¿½Ş£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ã²»ï¿½ï¿½Òªï¿½ï¿½Ã´ï¿½à£¬ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½Ã³É¿Õ¼ï¿½ï¿½É¡ï¿½
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é¿´ Demo ï¿½Ğ¶ï¿½Ó¦ï¿½ï¿½×¢ï¿½Í¡ï¿½
      */
     public static final String SCOPE =
             "email,direct_messages_read,direct_messages_write,"
                     + "friendships_groups_read,friendships_groups_write,statuses_to_me_read,"
                     + "follow_app_official_microblog," + "invitation_write";
+
+    //åº•éƒ¨å¯¼èˆªé¦–é¡µ
+    public static final String TAB_HONE = "é¦–é¡µ";
+    //åº•éƒ¨å¯¼èˆªæ¶ˆæ¯
+    public static final String TAB_MESSAGE = "æ¶ˆæ¯";
+    //åº•éƒ¨å¯¼èˆªå‘ç°
+    public static final String TAB_DISCOVER = "å‘ç°";
+    //åº•éƒ¨å¯¼èˆªæˆ‘
+    public static final String TAB_MINE = "æˆ‘";
 }
