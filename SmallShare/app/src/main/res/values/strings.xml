@@ -9,4 +9,6 @@
     <string name="tab_message">消息</string>
     <string name="tab_discover">发现</string>
     <string name="tab_mine">我</string>
+
+    <string name="oauth">正在新浪微博授权</string>
 </resources>
