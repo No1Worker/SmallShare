@@ -76,6 +76,7 @@ public class Oauth2Activity extends Activity implements IAuthView {
     Intent i=new Intent();
         i.setClass(this,MainActivity.class);
         startActivity(i);
+        finish();
     }
 
     @Override
