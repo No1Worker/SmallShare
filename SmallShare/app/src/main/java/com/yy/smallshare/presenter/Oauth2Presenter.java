@@ -4,6 +4,7 @@ import android.content.Context;
 
 import com.sina.weibo.sdk.auth.Oauth2AccessToken;
 import com.yy.smallshare.listener.IAuthView;
+import com.yy.smallshare.listener.OnAuthListener;
 import com.yy.smallshare.model.IOauthModel;
 import com.yy.smallshare.model.OauthImpl;
 
@@ -26,7 +27,18 @@ public class Oauth2Presenter {
 
     public void getUserInfo(Context context){
         iAuthView.showLoading();
-        iOauthModel.auth(context, iAuthView.getAuthUserParams());
+        iOauthModel.auth(context, iAuthView.getAuthUserParams(), new OnAuthListener() {
+            @Override
+            public void getAuthUserSuccess() {
+                iAuthView.toMainActivity();
+            }
+
+            @Override
+            public void getAuthUserFailed() {
+
+            }
+        });
+        iAuthView.toMainActivity();
     }
 
 

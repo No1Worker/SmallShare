@@ -4,9 +4,11 @@ import android.content.Context;
 
 import com.google.gson.Gson;
 import com.yy.smallshare.bean.User;
+import com.yy.smallshare.common.Session;
 import com.yy.smallshare.common.WeiboUrl;
 import com.yy.smallshare.httputils.OkHttpUtils;
 import com.yy.smallshare.httputils.callback.StringCallback;
+import com.yy.smallshare.listener.OnAuthListener;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -21,11 +23,11 @@ public class OauthImpl implements IOauthModel {
     private Map<String,String> params=new HashMap<String, String>();
 
     @Override
-    public void auth(Context context,User user) {
-        getUserRequest(context,user);
+    public void auth(Context context,User user,OnAuthListener onAuthListener) {
+        getUserRequest(context,user,onAuthListener);
     }
 
-    private void getUserRequest(Context context,User user){
+    private void getUserRequest(Context context,User user, final OnAuthListener onAuthListener){
         params.put("uid", user.getUserId());
         params.put("access_token", user.getToken());
         OkHttpUtils.post()
@@ -42,6 +44,8 @@ public class OauthImpl implements IOauthModel {
                     public void onResponse(String response) {
                         Gson gson=new Gson();
                         User user= gson.fromJson(response,User.class);
+                        Session.user=user;
+                        onAuthListener.getAuthUserSuccess();
                     }
                 });
     }

@@ -5,12 +5,12 @@ package com.yy.smallshare.common;
  */
 public class Constants {
     /** 当前应用的 APP_KEY，第三方应用应该使用自己的 APP_KEY 替换该 APP_KEY */
-    public static final String APP_KEY = "2120190150";
+    public static final String APP_KEY = "544123567";
 
     /**
      * 当前应用的APP_SECRET, 第三方应用应该使用自己的APP_SECRET替换 APP_SECRET
      */
-    public static final String APP_SECRET = "d416524600f143a22046432c597a6361";
+    public static final String APP_SECRET = "c083d8b85ceb3f7da0be15b1ee085948";
 
     /**
      * 当前应用的回调页，第三方应用可以使用自己的回调页。

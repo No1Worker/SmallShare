@@ -10,7 +10,7 @@ import java.util.Map;
 import okhttp3.RequestBody;
 
 /**
- * for HEAD、DELETE、PUT等其他方法
+ *
  * Created by Jaron Yu on 2016/2/29.
  */
 public class OtherRequestBuilder extends OkHttpRequestBuilder {

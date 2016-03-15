@@ -10,171 +10,171 @@ import java.io.Serializable;
 public class User implements Serializable{
 
     /*
-	 * ÓÃ»§±íÖ÷¼ü¡£
+	 * ç”¨æˆ·è¡¨ä¸»é”®ã€‚
 	 */
     private Long _id;
     /*
-     * ÓÃ»§±àºÅ
+     * ç”¨æˆ·ç¼–å·
      */
     private String userId;
     /*
-     * ÓÃ»§Ãû
+     * ç”¨æˆ·å
      */
     private String userName;
     /*
-     * ÊÚÈ¨µÄtokenÁîÅÆ
+     * æˆæƒçš„tokenä»¤ç‰Œ
      */
     private String token;
 
     /*
-     * ÊÚÈ¨µÄtokenµÄÃÜÔ¿¡£ÔÚOauth2ÖĞÊ¹ÓÃ²»µ½£¬Ö»ÓĞÔÚ1.0ÖĞĞèÒªÓÃµ½µÄ¡£
+     * æˆæƒçš„tokençš„å¯†é’¥ã€‚åœ¨Oauth2ä¸­ä½¿ç”¨ä¸åˆ°ï¼Œåªæœ‰åœ¨1.0ä¸­éœ€è¦ç”¨åˆ°çš„ã€‚
      */
     private String tokenSecret;
 
     //---------------mAccessToken--------------uid: 2230213540, access_token: 2.00I7kv7CdWjoND51a271cdb5LjvzJB, refresh_token: , expires_in: 1545935263760
 	/*
-	 * Ë¢ĞÂÁîÅÆ£¬ÔÚtoken¹ıÆÚºó£¬¿ÉÒÔÊ¹ÓÃË¢ĞÂÁîÅÆÀ´Ìæ»»token£¬ÓÃ´ËÀ´ÑÓ³¤ÊÚÈ¨Ê±¼ä¡£
+	 * åˆ·æ–°ä»¤ç‰Œï¼Œåœ¨tokenè¿‡æœŸåï¼Œå¯ä»¥ä½¿ç”¨åˆ·æ–°ä»¤ç‰Œæ¥æ›¿æ¢tokenï¼Œç”¨æ­¤æ¥å»¶é•¿æˆæƒæ—¶é—´ã€‚
 	 */
     private String refreshToken;
     /*
-     * ÊÚÈ¨¹ıÆÚÊ±¼ä¡£
+     * æˆæƒè¿‡æœŸæ—¶é—´ã€‚
      */
     private Long expiressIn;
     /*
-     * ÓÃ»§µÄÃèÊöĞÅÏ¢¡£
+     * ç”¨æˆ·çš„æè¿°ä¿¡æ¯ã€‚
      */
     private String description;
     /*
-     * ÓÃ»§µÄÍ¼±ê¡£
+     * ç”¨æˆ·çš„å›¾æ ‡ã€‚
      */
     private Drawable userIcon;
 
     /*
-     * ·ÛË¿Êı
+     * ç²‰ä¸æ•°
      */
     private Long followers_count ;
     /*
-     * ¹Ø×¢Êı
+     * å…³æ³¨æ•°
      */
     private Long friends_count ;
     /*
-     * Î¢²©Êı¡£
+     * å¾®åšæ•°ã€‚
      */
     private Long statuses_count  ;
     /*
-     * ÓÃ»§UID
+     * ç”¨æˆ·UID
      */
     private int id;
     /*
-     * ×Ö·û´®ĞÍµÄÓÃ»§UID
+     * å­—ç¬¦ä¸²å‹çš„ç”¨æˆ·UID
      */
     private String idstr;
     /*
-     * ÓÃ»§êÇ³Æ
+     * ç”¨æˆ·æ˜µç§°
      */
     private String screen_name;
     /*
-     * ÓÑºÃÏÔÊ¾Ãû³Æ
+     * å‹å¥½æ˜¾ç¤ºåç§°
      */
     private String name;
     /*
-     * ÓÃ»§ËùÔÚÊ¡ÊĞID
+     * ç”¨æˆ·æ‰€åœ¨çœå¸‚ID
      */
     private int province;
     /*
-     * ÓÃ»§ËùÔÚ³ÇÊĞID
+     * ç”¨æˆ·æ‰€åœ¨åŸå¸‚ID
      */
     private int city;
     /*
-     * ÓÃ»§ËùÔÚµØ
+     * ç”¨æˆ·æ‰€åœ¨åœ°
      */
     private String location;
     /*
-     * ÓÃ»§²©¿ÍµØÖ·
+     * ç”¨æˆ·åšå®¢åœ°å€
      */
     private String url;
     /*
-     * ÓÃ»§Í·ÏñµØÖ·£¨ÖĞÍ¼£©£¬50¡Á50ÏñËØ
+     * ç”¨æˆ·å¤´åƒåœ°å€ï¼ˆä¸­å›¾ï¼‰ï¼Œ50Ã—50åƒç´ 
      */
     private String profile_image_url;
     /*
-     * ÓÃ»§µÄÎ¢²©Í³Ò»URLµØÖ·
+     * ç”¨æˆ·çš„å¾®åšç»Ÿä¸€URLåœ°å€
      */
     private String profile_url ;
     /*
-     * ÓÃ»§µÄ¸öĞÔ»¯ÓòÃû
+     * ç”¨æˆ·çš„ä¸ªæ€§åŒ–åŸŸå
      */
     private String domain;
     /*
-     * ÓÃ»§µÄÎ¢ºÅ
+     * ç”¨æˆ·çš„å¾®å·
      */
     private String weihao;
     /*
-     * ĞÔ±ğ£¬m£ºÄĞ¡¢f£ºÅ®¡¢n£ºÎ´Öª
+     * æ€§åˆ«ï¼Œmï¼šç”·ã€fï¼šå¥³ã€nï¼šæœªçŸ¥
      */
     private String gender;
     /*
-     * ÊÕ²ØÊı
+     * æ”¶è—æ•°
      */
     private int favourites_count;
     /*
-     * ÓÃ»§´´½¨£¨×¢²á£©Ê±¼ä
+     * ç”¨æˆ·åˆ›å»ºï¼ˆæ³¨å†Œï¼‰æ—¶é—´
      */
     private String created_at;
     /*
-     * ÊÇ·ñÔÊĞíËùÓĞÈË¸øÎÒ·¢Ë½ĞÅ£¬true£ºÊÇ£¬false£º·ñ
+     * æ˜¯å¦å…è®¸æ‰€æœ‰äººç»™æˆ‘å‘ç§ä¿¡ï¼Œtrueï¼šæ˜¯ï¼Œfalseï¼šå¦
      */
     private boolean allow_all_act_msg ;
     /*
-     * ÊÇ·ñÔÊĞí±êÊ¶ÓÃ»§µÄµØÀíÎ»ÖÃ£¬true£ºÊÇ£¬false£º·ñ
+     * æ˜¯å¦å…è®¸æ ‡è¯†ç”¨æˆ·çš„åœ°ç†ä½ç½®ï¼Œtrueï¼šæ˜¯ï¼Œfalseï¼šå¦
      */
     private boolean geo_enabled ;
     /*
-     * ÊÇ·ñÊÇÎ¢²©ÈÏÖ¤ÓÃ»§£¬¼´¼ÓVÓÃ»§£¬true£ºÊÇ£¬false£º·ñ
+     * æ˜¯å¦æ˜¯å¾®åšè®¤è¯ç”¨æˆ·ï¼Œå³åŠ Vç”¨æˆ·ï¼Œtrueï¼šæ˜¯ï¼Œfalseï¼šå¦
      */
     private String verified;
     /*
-     * ÓÃ»§±¸×¢ĞÅÏ¢£¬Ö»ÓĞÔÚ²éÑ¯ÓÃ»§¹ØÏµÊ±²Å·µ»Ø´Ë×Ö¶Î
+     * ç”¨æˆ·å¤‡æ³¨ä¿¡æ¯ï¼Œåªæœ‰åœ¨æŸ¥è¯¢ç”¨æˆ·å…³ç³»æ—¶æ‰è¿”å›æ­¤å­—æ®µ
      */
     private String remark ;
     /*
-     * ÓÃ»§µÄ×î½üÒ»ÌõÎ¢²©ĞÅÏ¢×Ö¶Î
+     * ç”¨æˆ·çš„æœ€è¿‘ä¸€æ¡å¾®åšä¿¡æ¯å­—æ®µ
      */
     private Weibo weibo;
     /*
-     * ÊÇ·ñÔÊĞíËùÓĞÈË¶ÔÎÒµÄÎ¢²©½øĞĞÆÀÂÛ£¬true£ºÊÇ£¬false£º·ñ
+     * æ˜¯å¦å…è®¸æ‰€æœ‰äººå¯¹æˆ‘çš„å¾®åšè¿›è¡Œè¯„è®ºï¼Œtrueï¼šæ˜¯ï¼Œfalseï¼šå¦
      */
     private boolean allow_all_comment ;
     /*
-     * ÓÃ»§Í·ÏñµØÖ·£¨´óÍ¼£©£¬180¡Á180ÏñËØ
+     * ç”¨æˆ·å¤´åƒåœ°å€ï¼ˆå¤§å›¾ï¼‰ï¼Œ180Ã—180åƒç´ 
      */
     private String avatar_large;
 
     /*
-     * ÓÃ»§Í·ÏñµØÖ·£¨¸ßÇå£©£¬¸ßÇåÍ·ÏñÔ­Í¼
+     * ç”¨æˆ·å¤´åƒåœ°å€ï¼ˆé«˜æ¸…ï¼‰ï¼Œé«˜æ¸…å¤´åƒåŸå›¾
      */
     private String avatar_hd ;
     /*
-     * ÈÏÖ¤Ô­Òò
+     * è®¤è¯åŸå› 
      */
     private String verified_reason ;
     /*
-     * ¸ÃÓÃ»§ÊÇ·ñ¹Ø×¢µ±Ç°µÇÂ¼ÓÃ»§£¬true£ºÊÇ£¬false£º·ñ
+     * è¯¥ç”¨æˆ·æ˜¯å¦å…³æ³¨å½“å‰ç™»å½•ç”¨æˆ·ï¼Œtrueï¼šæ˜¯ï¼Œfalseï¼šå¦
      */
     private boolean follow_me;
     /*
-     * ÓÃ»§µÄÔÚÏß×´Ì¬£¬0£º²»ÔÚÏß¡¢1£ºÔÚÏß
+     * ç”¨æˆ·çš„åœ¨çº¿çŠ¶æ€ï¼Œ0ï¼šä¸åœ¨çº¿ã€1ï¼šåœ¨çº¿
      */
     private int online_status ;
 
 
 
     /*
-     * ÓÃ»§µÄ»¥·ÛÊı
+     * ç”¨æˆ·çš„äº’ç²‰æ•°
      */
     private int bi_followers_count ;
     /*
-     * ÓÃ»§µ±Ç°µÄÓïÑÔ°æ±¾£¬zh-cn£º¼òÌåÖĞÎÄ£¬zh-tw£º·±ÌåÖĞÎÄ£¬en£ºÓ¢Óï
+     * ç”¨æˆ·å½“å‰çš„è¯­è¨€ç‰ˆæœ¬ï¼Œzh-cnï¼šç®€ä½“ä¸­æ–‡ï¼Œzh-twï¼šç¹ä½“ä¸­æ–‡ï¼Œenï¼šè‹±è¯­
      */
     private String lang ;
 
@@ -183,259 +183,224 @@ public class User implements Serializable{
     private Drawable ico;
 
     /*
-     * µ±Ç°µÇÂ¼ÓÃ»§ÊÇ·ñ¹Ø×¢¸ÃÓÃ»§£¬true£ºÊÇ£¬false£º·ñ
+     * å½“å‰ç™»å½•ç”¨æˆ·æ˜¯å¦å…³æ³¨è¯¥ç”¨æˆ·ï¼Œtrueï¼šæ˜¯ï¼Œfalseï¼šå¦
      */
     private boolean following;
     /*
-     * ÓÃ»§µÄ×î½üÒ»ÌõÎ¢²©ID
+     * ç”¨æˆ·çš„æœ€è¿‘ä¸€æ¡å¾®åšID
      */
     private int status_id;
 
 
-    public Long get_id() {
-        return _id;
+    public int getStatus_id() {
+        return status_id;
     }
-
-    public void set_id(Long _id) {
-        this._id = _id;
+    public void setStatus_id(int status_id) {
+        this.status_id = status_id;
     }
-
-    public String getUserId() {
-        return userId;
+    public boolean isFollowing() {
+        return following;
     }
-
-    public void setUserId(String userId) {
-        this.userId = userId;
+    public void setFollowing(boolean following) {
+        this.following = following;
     }
-
-    public String getUserName() {
-        return userName;
+    public Drawable getIco() {
+        return ico;
     }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getToken() {
-        return token;
-    }
-
-    public void setToken(String token) {
-        this.token = token;
-    }
-
-    public String getTokenSecret() {
-        return tokenSecret;
-    }
-
-    public void setTokenSecret(String tokenSecret) {
-        this.tokenSecret = tokenSecret;
-    }
-
-    public String getRefreshToken() {
-        return refreshToken;
-    }
-
-    public void setRefreshToken(String refreshToken) {
-        this.refreshToken = refreshToken;
-    }
-
-    public Long getExpiressIn() {
-        return expiressIn;
-    }
-
-    public void setExpiressIn(Long expiressIn) {
-        this.expiressIn = expiressIn;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
+    public void setIco(Drawable ico) {
+        this.ico = ico;
     }
 
     public Drawable getUserIcon() {
         return userIcon;
     }
-
     public void setUserIcon(Drawable userIcon) {
         this.userIcon = userIcon;
+    }
+    public Drawable getSmall_icon() {
+        return ssmall_icon;
+    }
+    public void setSsmall_icon(Drawable ssmall_icon) {
+        this.ssmall_icon = ssmall_icon;
+    }
+    public Long get_id() {
+        return _id;
+    }
+    public void set_id(Long _id) {
+        this._id = _id;
+    }
+    public String getUserId() {
+        return userId;
+    }
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+    public String getUserName() {
+        return userName;
+    }
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+    public String getToken() {
+        return token;
+    }
+    public void setToken(String token) {
+        this.token = token;
+    }
+    public String getTokenSecret() {
+        return tokenSecret;
+    }
+    public void setTokenSecret(String tokenSecret) {
+        this.tokenSecret = tokenSecret;
+    }
+    public String getRefreshToken() {
+        return refreshToken;
+    }
+    public void setRefreshToken(String refreshToken) {
+        this.refreshToken = refreshToken;
+    }
+    public Long getExpiressIn() {
+        return expiressIn;
+    }
+    public void setExpiressIn(Long expiressIn) {
+        this.expiressIn = expiressIn;
+    }
+    public String getDescription() {
+        return description;
+    }
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public Long getFollowers_count() {
         return followers_count;
     }
-
     public void setFollowers_count(Long followers_count) {
         this.followers_count = followers_count;
     }
-
     public Long getFriends_count() {
         return friends_count;
     }
-
     public void setFriends_count(Long friends_count) {
         this.friends_count = friends_count;
     }
-
     public Long getStatuses_count() {
         return statuses_count;
     }
-
     public void setStatuses_count(Long statuses_count) {
         this.statuses_count = statuses_count;
     }
-
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
-
     public String getIdstr() {
         return idstr;
     }
-
     public void setIdstr(String idstr) {
         this.idstr = idstr;
     }
-
     public String getScreen_name() {
         return screen_name;
     }
-
     public void setScreen_name(String screen_name) {
         this.screen_name = screen_name;
     }
-
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public int getProvince() {
         return province;
     }
-
     public void setProvince(int province) {
         this.province = province;
     }
-
     public int getCity() {
         return city;
     }
-
     public void setCity(int city) {
         this.city = city;
     }
-
     public String getLocation() {
         return location;
     }
-
     public void setLocation(String location) {
         this.location = location;
     }
-
     public String getUrl() {
         return url;
     }
-
     public void setUrl(String url) {
         this.url = url;
     }
-
     public String getProfile_image_url() {
         return profile_image_url;
     }
-
     public void setProfile_image_url(String profile_image_url) {
         this.profile_image_url = profile_image_url;
     }
-
     public String getProfile_url() {
         return profile_url;
     }
-
     public void setProfile_url(String profile_url) {
         this.profile_url = profile_url;
     }
-
     public String getDomain() {
         return domain;
     }
-
     public void setDomain(String domain) {
         this.domain = domain;
     }
-
     public String getWeihao() {
         return weihao;
     }
-
     public void setWeihao(String weihao) {
         this.weihao = weihao;
     }
-
     public String getGender() {
         return gender;
     }
-
     public void setGender(String gender) {
         this.gender = gender;
     }
-
     public int getFavourites_count() {
         return favourites_count;
     }
-
     public void setFavourites_count(int favourites_count) {
         this.favourites_count = favourites_count;
     }
-
     public String getCreated_at() {
         return created_at;
     }
-
     public void setCreated_at(String created_at) {
         this.created_at = created_at;
     }
-
     public boolean isAllow_all_act_msg() {
         return allow_all_act_msg;
     }
-
     public void setAllow_all_act_msg(boolean allow_all_act_msg) {
         this.allow_all_act_msg = allow_all_act_msg;
     }
-
     public boolean isGeo_enabled() {
         return geo_enabled;
     }
-
     public void setGeo_enabled(boolean geo_enabled) {
         this.geo_enabled = geo_enabled;
     }
-
     public String getVerified() {
         return verified;
     }
-
     public void setVerified(String verified) {
         this.verified = verified;
     }
-
     public String getRemark() {
         return remark;
     }
-
     public void setRemark(String remark) {
         this.remark = remark;
     }
@@ -443,105 +408,56 @@ public class User implements Serializable{
     public Weibo getWeibo() {
         return weibo;
     }
-
     public void setWeibo(Weibo weibo) {
         this.weibo = weibo;
     }
-
     public boolean isAllow_all_comment() {
         return allow_all_comment;
     }
-
     public void setAllow_all_comment(boolean allow_all_comment) {
         this.allow_all_comment = allow_all_comment;
     }
-
     public String getAvatar_large() {
         return avatar_large;
     }
-
     public void setAvatar_large(String avatar_large) {
         this.avatar_large = avatar_large;
     }
-
     public String getAvatar_hd() {
         return avatar_hd;
     }
-
     public void setAvatar_hd(String avatar_hd) {
         this.avatar_hd = avatar_hd;
     }
-
     public String getVerified_reason() {
         return verified_reason;
     }
-
     public void setVerified_reason(String verified_reason) {
         this.verified_reason = verified_reason;
     }
-
     public boolean isFollow_me() {
         return follow_me;
     }
-
     public void setFollow_me(boolean follow_me) {
         this.follow_me = follow_me;
     }
-
     public int getOnline_status() {
         return online_status;
     }
-
     public void setOnline_status(int online_status) {
         this.online_status = online_status;
     }
-
     public int getBi_followers_count() {
         return bi_followers_count;
     }
-
     public void setBi_followers_count(int bi_followers_count) {
         this.bi_followers_count = bi_followers_count;
     }
-
     public String getLang() {
         return lang;
     }
-
     public void setLang(String lang) {
         this.lang = lang;
-    }
-
-    public Drawable getSsmall_icon() {
-        return ssmall_icon;
-    }
-
-    public void setSsmall_icon(Drawable ssmall_icon) {
-        this.ssmall_icon = ssmall_icon;
-    }
-
-    public Drawable getIco() {
-        return ico;
-    }
-
-    public void setIco(Drawable ico) {
-        this.ico = ico;
-    }
-
-    public boolean isFollowing() {
-        return following;
-    }
-
-    public void setFollowing(boolean following) {
-        this.following = following;
-    }
-
-    public int getStatus_id() {
-        return status_id;
-    }
-
-    public void setStatus_id(int status_id) {
-        this.status_id = status_id;
     }
 
     @Override

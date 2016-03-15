@@ -2,11 +2,11 @@ package com.yy.smallshare.module.activity;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.sina.weibo.sdk.auth.AuthInfo;
 import com.sina.weibo.sdk.auth.Oauth2AccessToken;
 import com.sina.weibo.sdk.auth.WeiboAuth;
 import com.sina.weibo.sdk.auth.WeiboAuthListener;
@@ -31,7 +31,6 @@ public class Oauth2Activity extends Activity implements IAuthView {
     /**
      * 微博Web授权类，提供了登录等功能
      */
-    private AuthInfo mAuthInfo;
 
     private WeiboAuth mWeiboAuth;
 
@@ -74,7 +73,9 @@ public class Oauth2Activity extends Activity implements IAuthView {
 
     @Override
     public void toMainActivity() {
-
+    Intent i=new Intent();
+        i.setClass(this,MainActivity.class);
+        startActivity(i);
     }
 
     @Override
