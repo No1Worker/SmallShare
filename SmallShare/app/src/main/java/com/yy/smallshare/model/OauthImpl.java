@@ -27,7 +27,7 @@ public class OauthImpl implements IOauthModel {
         getUserRequest(context,user,onAuthListener);
     }
 
-    private void getUserRequest(Context context,User user, final OnAuthListener onAuthListener){
+    private void getUserRequest(Context context, final User user, final OnAuthListener onAuthListener){
         params.put("uid", user.getUserId());
         params.put("access_token", user.getToken());
         OkHttpUtils.post()
@@ -43,8 +43,10 @@ public class OauthImpl implements IOauthModel {
                     @Override
                     public void onResponse(String response) {
                         Gson gson=new Gson();
-                        User user= gson.fromJson(response,User.class);
-                        Session.user=user;
+                        User userinfo= gson.fromJson(response,User.class);
+                        userinfo.setToken(user.getToken());
+                        userinfo.setUserId(user.getUserId());
+                        Session.user=userinfo;
                         onAuthListener.getAuthUserSuccess();
                     }
                 });
